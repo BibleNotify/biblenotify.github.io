@@ -61,7 +61,7 @@ body {
   font-weight: bold;
 }
 .bottom-cta {
-  background-color: #85c07d;
+  background-color: #82db78;
 }
 .bottom-cta h5 {
   color: #fff;
@@ -69,7 +69,7 @@ body {
   margin-top: 3rem;
 }
 .footer {
-  color: #fff;
-  background-color: #272727;
+  color: #333;
+  background-color: #ececec;
   text-align: center;
 }
