@@ -1,33 +1,26 @@
-
 body {
   font-family: "Gothic A1", sans-serif;
 }
-
 .h-angle-top {
-  background-image:-o-linear-gradient(88deg, transparent 49%, #82db78 50%);
-  background-image:linear-gradient(178deg, transparent 49%, #82db78 50%);
+  background-image:-o-linear-gradient(88deg, transparent 49%, #333 50%);
+  background-image:linear-gradient(178deg, transparent 49%, #333 50%);
   height:55px;
 }
-
-.navbar {
-  padding: .6rem;
+.btn-cta {
+  color: #fff;
+  background: #7f4949;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-
-.navbar-scroll {
-  background-color: #fff;
+.btn-cta:hover, .btn-cta:focus, .btn-cta:active, .btn-cta:active:focus,
+.btn-cta.btn:not(:disabled):not(.disabled):active,
+.btn-cta.btn:not(:disabled):not(.disabled):active:focus {
+  background: #573232;
+  outline: 0;
+  color: #e2e2e2;
+  box-shadow: none;
 }
-
-.navbar li a {
-  color: #888888;
-  fill: #888888;
-  margin: 0rem .4rem;
-}
-
-.navbar li a:hover {
-  color: #333333;
-  fill: #333333;
-}
-
 .hero-section {
   background-image: url(../img/bg-main.png);
   background-size: cover;
@@ -35,55 +28,48 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 .hero-section .cta {
-  margin: 8rem 0rem 1rem 0rem;
+  margin: 6rem 0rem 1rem 0rem;
 }
-
+.txt-underline {
+  border-radius: 1px;
+  box-shadow: 0px 5px #85c07d;
+}
 .hero-section h1 {
-  color: #333333;
-  font-weight: bold;
+  color: #333;
+  font-weight: 800;
 }
-
 .hero-section h2 {
-  color: #888888;
-  font-weight: medium;
+  margin-top: 1.2rem;
+  color: rgba(51, 51, 51, 0.835);
 }
-
 .uptodown-btn {
   margin-top: 1.2rem;
-  width: 140px;
+  width: 160px;
 }
-
+#features p {
+  color: rgba(51, 51, 51, 0.835);
+}
 #features h3 {
   color: #333333;
-  font-weight: bold;
+  font-weight: 800;
 }
-
-#features p {
-  color: #A4A4A4;
-}
-
 #features .feature {
-  color: #A4A4A4;
+  color: rgba(51, 51, 51, 0.835);
 }
-
 #features .feature h5 {
   font-weight: bold;
 }
-
 .bottom-cta {
-  background-color: #82db78;
+  background-color: #333;
 }
-
 .bottom-cta h5 {
   color: #fff;
-  font-weight: bold;
+  font-weight: 800;
   margin-top: 3rem;
 }
-
 .footer {
-  color: #333333;
-  background-color: #f0f0f0;
+  color: #fff;
+  background-color: #272727;
   text-align: center;
 }
