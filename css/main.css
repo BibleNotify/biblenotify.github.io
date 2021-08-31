@@ -2,8 +2,8 @@ body {
   font-family: "Gothic A1", sans-serif;
 }
 .h-angle-top {
-  background-image:-o-linear-gradient(88deg, transparent 49%, #333 50%);
-  background-image:linear-gradient(178deg, transparent 49%, #333 50%);
+  background-image:-o-linear-gradient(88deg, transparent 49%, #85c07d 50%);
+  background-image:linear-gradient(178deg, transparent 49%, #85c07d 50%);
   height:55px;
 }
 .btn-cta {
@@ -61,7 +61,7 @@ body {
   font-weight: bold;
 }
 .bottom-cta {
-  background-color: #333;
+  background-color: #85c07d;
 }
 .bottom-cta h5 {
   color: #fff;
