@@ -1,6 +1,9 @@
 body {
   font-family: "Gothic A1", sans-serif;
 }
+.icon {
+  max-width: 22px;
+}
 .h-angle-top {
   background-image:-o-linear-gradient(88deg, transparent 49%, #82db78 50%);
   background-image:linear-gradient(178deg, transparent 49%, #82db78 50%);
@@ -70,4 +73,10 @@ body {
   color: #333;
   background-color: #ececec;
   text-align: center;
+}
+
+@media (min-width: 576px) {
+  .icon {
+    max-width: 30px;
+  }
 }
