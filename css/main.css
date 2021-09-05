@@ -1,12 +1,12 @@
 body {
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Roboto", Arial ,sans-serif;
 }
 .icon {
   max-width: 22px;
 }
 .h-angle-top {
-  background-image:-o-linear-gradient(88deg, transparent 49%, #82db78 50%);
-  background-image:linear-gradient(178deg, transparent 49%, #82db78 50%);
+  background-image:-o-linear-gradient(88deg, transparent 49%, #e4e4e4 50%);
+  background-image:linear-gradient(178deg, transparent 49%, #e4e4e4 50%);
   height:55px;
 }
 .btn-cta {
@@ -23,6 +23,10 @@ body {
   outline: 0;
   color: #e2e2e2;
   box-shadow: none;
+}
+.utd-btn {
+  height: 50px;
+  width: auto;
 }
 .hero-section {
   background-image: url(../img/bg-main.png);
@@ -43,10 +47,13 @@ body {
 .hero-section h1 {
   color: #333;
   font-weight: 800;
+  line-height: 3.7rem;
+  font-size: 3.2rem;
 }
 .hero-section h2 {
-  margin-top: 1.2rem;
+  margin: 1.6rem 0;
   color: rgba(51, 51, 51, 0.835);
+  font-weight: 400;
 }
 #features p {
   color: rgba(51, 51, 51, 0.835);
@@ -62,10 +69,10 @@ body {
   font-weight: bold;
 }
 .bottom-cta {
-  background-color: #82db78;
+  background-color: #e4e4e4;
 }
 .bottom-cta h5 {
-  color: #fff;
+  color: #333;
   font-weight: 800;
   margin-top: 3rem;
 }
@@ -75,8 +82,9 @@ body {
   text-align: center;
 }
 
-@media (min-width: 576px) {
-  .icon {
-    max-width: 30px;
+@media (max-width: 576px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+    line-height: 2.7rem;
   }
 }
