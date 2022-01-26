@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home-view{
+  position:relative;
+  bottom:-60vh;
+  width:175%
+}
+@media(min-width: 544px){
+  .home-view{width:130%}
+}
+@media(min-width: 768px){
+  .home-view{width:125%}
+}
+@media(min-width: 1012px){
+  .home-view{bottom:auto;width:auto;height:100%;max-height:740px}
+}
+.home-view-2,.home-view-3{position:absolute;}
