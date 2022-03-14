@@ -83,24 +83,24 @@
       <div class="w-full md:w-2/3">
         <div class="ml-4 md:ml-28">
           <div class="flex flex-col pt-5 z-1">
-            <div class="relative w-full md:w-11/12 lg:w-2/3 flex flex-col lg:mx-0 pr-0 lg:pr-20 mb-72">
+            <div id="feature1" class="relative w-full md:w-11/12 lg:w-2/3 flex flex-col lg:mx-0 pr-0 lg:pr-20 mb-72">
               <h5 class="text-gray-800 text-4xl font-bold">Set when to send the notification</h5>
               <p class="text-gray-500 text-lg mt-3 font-medium">Set the time of day Bible Notify will send you the verse notification each day &mdash;right down to the minute, if you so desire.</p>
             </div>
-            <div class="relative w-full md:w-11/12 lg:w-2/3 flex flex-col lg:mx-0 pr-0 lg:pr-20 mb-72">
+            <div id="feature2" class="relative w-full md:w-11/12 lg:w-2/3 flex flex-col lg:mx-0 pr-0 lg:pr-20 mb-72">
               <h5 class="text-gray-800 text-4xl font-bold">Recieve random Scripture verses</h5>
               <p class="text-gray-500 text-lg mt-3 font-medium">Get random verse notifications from a selection of 140+ inspiring verses from the Scriptures.</p>
             </div>
-            <div class="relative w-full md:w-11/12 lg:w-2/3 flex flex-col lg:mx-0 pr-0 lg:pr-20 mb-80 lg:mb-32">
+            <div id="feature3" class="relative w-full md:w-11/12 lg:w-2/3 flex flex-col lg:mx-0 pr-0 lg:pr-20 mb-80 lg:mb-32">
               <h5 class="text-gray-800 text-4xl font-bold">Read the full verse chapter in the built-in reader</h5>
               <p class="text-gray-500 text-lg mt-3 font-medium pb-10">Simply tap/click on the notification to read the chapter in which the verse is found in Bible Notify's built-in reader.</p>
             </div>
             <div class="w-full lg:w-1/2 absolute top-0 right-0 h-full" style="padding-left: 0 !important; padding-right: 0 !important;">
               <div class="top-0 right-0 sticky z-1 pt-3 pt-lg-8">
                 <div class="min-h-screen overflow-hidden flex items-start relative pl-2 pl-lg-4">
-                    <img src="assets/desktop.png" class="home-view home-view-1 z-2" alt="" loading="lazy">
-                    <!-- <img src="assets/placeholder2.png" class="home-view home-view-2 z-2" alt="" loading="lazy">
-                    <img src="assets/placeholder.png" class="home-view home-view-3 z-2" alt="" loading="lazy"> -->
+                    <img id="image3" src="assets/bible-notify-reader.jpg" class="home-view home-view-3 z-2" alt="Bible Notify Reader" loading="lazy">
+                    <img id="image2" src="assets/bible-notify-home.jpg" class="home-view home-view-2 z-2" alt="" loading="lazy">
+                    <img id="image1" src="assets/bible-notify-set-time.jpg" class="home-view home-view-1 z-2" alt="Set time for notification to send" loading="lazy">
                 </div>
               </div>
             </div>
@@ -132,11 +132,11 @@
         <div class="w-full lg:w-3/5 pl-0 lg:pl-44 text-center lg:text-left mt-5 mx-auto">
           <p class="text-gray-300 uppercase text-md tracking-wider font-medium">Desktop Application</p>
           <h5 class="text-white text-5xl lg:text-6xl font-bold">Bible Notify for Desktop.</h5>
-          <h4 class="text-gray-100 text-2xl mt-1 font-medium tracking-wide">Scripture verse notifications, to your PC.</h4>
+          <h4 class="text-gray-100 text-2xl mt-1 font-medium tracking-wide mx-2">Scripture verse notifications, to your PC.</h4>
           <div class="flex flex-row mt-6 mx-auto justify-center lg:justify-start">
-            <p class="mt-2 text-white text-xl font-bold py-3 px-10 border-2 rounded-lg">Coming soon!</p>
-            <!-- <a href="#" class="relative mt-2 mr-2 rounded-lg text-lg font-medium py-3 px-10 bg-accent hover:bg-white text-darkgray cursor-hand shadow-sm ease-in-out duration-500">Downloads</a> -->
+            <a href="https://github.com/BibleNotify/BibleNotifyDesktop" class="relative mt-2 mr-2 rounded-lg text-lg font-medium py-3 px-10 bg-accent hover:bg-white text-darkgray cursor-hand shadow-sm ease-in-out duration-500">Github repo</a>
           </div>
+          <small class="text-white mt-1">Windows/Linux binaries are coming soon.</small>
         </div>
         <div class="w-full items-end justify-end lg:w-2/5">
           <img src="assets/desktop-app.png" class="w-auto h-auto hover:scale-105 transition ease-in-out duration-300" alt="Bible Notify for Desktop" loading="lazy">
@@ -156,5 +156,25 @@
         <p class="text-gray-300 tracking-wider text-sm italic mt-2">"Thy word is a lamp unto my feet, and a light unto my path." -Psalms 119:105</p>
       </div>
     </footer>
+    <script>
+      function reveal() {
+        var feature1 = document.getElementById("feature1");
+        var feature2 = document.getElementById("feature2");
+        var image1 = document.getElementById("image1");
+        var image2 = document.getElementById("image2");
+        var windowHeight = window.innerHeight;
+        if (feature1.getBoundingClientRect().top < 0) {
+          image1.classList.add("hidden");
+        } else {
+          image1.classList.remove("hidden");
+        }
+        if (feature2.getBoundingClientRect().top < windowHeight - (windowHeight - (windowHeight / 5))) {
+          image2.classList.add("hidden");
+        } else {
+          image2.classList.remove("hidden");
+        }
+      }
+      window.addEventListener("scroll", reveal);
+    </script>
   </body>
 </html>
