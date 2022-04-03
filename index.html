@@ -88,19 +88,19 @@
       <div class="w-full md:w-2/3">
         <div class="ml-4 md:ml-28">
           <div class="flex flex-col pt-5 z-1">
-            <div id="feature1" class="relative w-full md:w-11/12 lg:w-2/3 flex flex-col lg:mx-0 pr-0 lg:pr-20 mb-72">
+            <div id="feature1" class="relative w-full md:w-11/12 lg:w-2/3 flex flex-col lg:mx-0 pr-0 lg:pr-20 mb-96">
               <h5 class="text-gray-800 text-4xl font-black">Set when to send the notification</h5>
               <p class="text-gray-700 text-lg mt-3 tracking-wider">Set the time of day Bible Notify will send you the verse notification each day &mdash;right down to the minute, if you so desire.</p>
             </div>
-            <div id="feature2" class="relative w-full md:w-11/12 lg:w-2/3 flex flex-col lg:mx-0 pr-0 lg:pr-20 mb-72">
+            <div id="feature2" class="relative w-full md:w-11/12 lg:w-2/3 flex flex-col lg:mx-0 pr-0 lg:pr-20 mb-96">
               <h5 class="text-gray-800 text-4xl font-black">Recieve random Scripture verses</h5>
-              <p class="text-gray-700 text-lg mt-3 tracking-wider">Get random verse notifications from a selection of 140+ inspiring verses from the Scriptures.</p>
+              <p class="text-gray-700 text-lg mt-3 tracking-wider">Recieve random verse notifications from a selection of 140+ inspiring verses from the Scriptures on your desktop or mobile device.</p>
             </div>
-            <div id="feature3" class="relative w-full md:w-11/12 lg:w-2/3 flex flex-col lg:mx-0 pr-0 lg:pr-20 mb-80 lg:mb-32">
+            <div id="feature3" class="relative w-full md:w-11/12 lg:w-2/3 flex flex-col lg:mx-0 pr-0 lg:pr-20 mb-96">
               <h5 class="text-gray-800 text-4xl font-black">Read the full verse chapter in the built-in reader</h5>
-              <p class="text-gray-700 text-lg mt-3 pb-10 tracking-wider">Simply tap/click on the notification to read the chapter in which the verse is found in Bible Notify's built-in reader.</p>
+              <p class="text-gray-700 text-lg mt-3 pb-10 tracking-wider">Simply tap/click on the notification to read the chapter in which the verse is found in Bible Notify's built-in reader. Or, click the randomize button to read a random chapter.</p>
             </div>
-            <div class="w-full lg:w-1/2 absolute top-0 right-0 h-full" style="padding-left: 0 !important; padding-right: 0 !important;">
+            <div id="images" class="w-full lg:w-1/2 absolute top-0 right-0 h-full" style="padding-left: 0 !important; padding-right: 0 !important;">
               <div class="top-0 right-0 sticky z-1 pt-3 pt-lg-8">
                 <div class="min-h-screen overflow-hidden flex items-start relative pl-2 pl-lg-4">
                     <img id="image3" src="assets/bible-notify-reader.jpg" class="home-view home-view-3 z-2" alt="Bible Notify Reader" loading="lazy">
@@ -168,12 +168,12 @@
         var image1 = document.getElementById("image1");
         var image2 = document.getElementById("image2");
         var windowHeight = window.innerHeight;
-        if (feature1.getBoundingClientRect().top < 0) {
+        if ((feature1.getBoundingClientRect().bottom) < -100) {
           image1.classList.add("hidden");
         } else {
           image1.classList.remove("hidden");
         }
-        if (feature2.getBoundingClientRect().top < windowHeight - (windowHeight - (windowHeight / 5))) {
+        if (feature2.getBoundingClientRect().bottom < -100) {
           image2.classList.add("hidden");
         } else {
           image2.classList.remove("hidden");
