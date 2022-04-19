@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.border-b-1 {
+  border-bottom: 1px solid #7DD273;
+}
 .dropdown:focus-within .dropdown-menu {
   opacity:1;
   transform: translate(0) scale(1);
