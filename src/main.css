@@ -7,23 +7,23 @@
   transform: translate(0) scale(1);
   visibility: visible;
 }
-.home-view{
+.feature-view{
   position:relative;
   bottom:-60vh;
   width: 175%;
   height: auto;
 }
 @media(min-width: 544px){
-  .home-view{width:130%}
+  .feature-view{width:130%}
 }
 @media(min-width: 768px){
-  .home-view{width:125%}
+  .feature-view{width:125%}
 }
 @media(min-width: 1012px){
-  .home-view{
+  .feature-view{
     bottom:auto;
     width:auto;
     max-height:740px;
   }
 }
-.home-view-2,.home-view-3{position:absolute;}
+.feature-view-2,.feature-view-3{position:absolute;}
