@@ -1,6 +1,6 @@
 # Bible Notify Website
 
-Official website for [Bible Notify](https://github.com/BibleNotify), Free daily Bible verse notification app for Android and Desktop.
+Official website for [Bible Notify](https://biblenotify.github.io), a free and open-source daily Bible verse notification app for Android and Desktop.
 
 
 ## Development
