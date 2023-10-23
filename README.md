@@ -5,11 +5,11 @@ Official website for [Bible Notify](https://biblenotify.github.io), a free and o
 
 ## Development
 
-``npx tailwindcss -i ./src/main.css -o ./assets/main.css --watch``
+``npm run dev``
 
 ## Build for Production
 
-``npx tailwindcss -i ./src/main.css -o ./assets/main.css --minify``
+``npm run build``
 
 
 ## License
