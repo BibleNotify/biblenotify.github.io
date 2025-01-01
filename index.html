@@ -217,7 +217,7 @@
       <div class="flex flex-col items-center text-center w-full md:w-10/12 px-4 mx-auto">
         <img src="assets/bible-notify-light.svg" class="w-auto h-12 mx-auto" alt="Bible Notify logo" loading="lazy">
         <p class="text-white/80 tracking-wide text-sm mt-4">"Thy word is a lamp unto my feet, and a light unto my path."<br> -Psalms 119:105</p>
-        <small class="text-white/70 mt-10">Bible Notify &copy; 2021-2024 Bible Notify Contributors &bull; Website design by <a class="text-accent hover:underline hover:text-gray-200 duration-300" href="https://noahrahm.com">Noah Rahm</a></small>
+        <small class="text-white/70 mt-10">Bible Notify &copy; 2021-<span id="copyrightYear">2025</span> Bible Notify Contributors &bull; Website design by <a class="text-accent hover:underline hover:text-gray-200 duration-300" href="https://noahrahm.com">Noah Rahm</a></small>
       </div>
     </footer>
     <script>
@@ -239,6 +239,12 @@
         }
       }
       window.addEventListener("scroll", reveal);
+
+      window.onload = function() {
+        var today = new Date();
+        var year = today.getFullYear();
+        document.getElementById("copyrightYear").innerHTML = year;
+      }
     </script>
   </body>
 </html>
